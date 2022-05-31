@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Visor del clima</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <!--libreria boxicons para los iconos-->
+    <link rel="stylesheet" href="https://www.unpkg.com/boxicons@2.0.9/css/boxicons.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><i class='bx bx-left-arrow-alt'></i><p>Visor del clima</p></header>
+      <!--menú de busqueda-->
+      <section class="inputPart">
+        <p class="infoTxt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Ingresa la ciudad/lugar" required>
+          <button class="searchButton">Buscar</button>
+          <button class="locationButton">Buscar por ubicación actual</button>
+        </div>
+      </section>
+      <!--seccion del clima donde se muestran los datos de la api implementada-->
+      <section class="weatherPart">
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span>_, _</span>
+        </div>
+
+        <div class="infoWeather">
+          <div class="img">
+            <img src="#" alt="Icono del clima"/>
+          </div>
+
+          <div class="temperature">
+            <i class="bx bxs-thermometer"></i>
+            <span class="num">_</span>
+            <span class="degrees"> °</span>C
+          </div>
+        </div>
+
+        <div class="weatherDetail">_ _</div>
+        <div class="bottomDetails">
+
+
+          <div class="column data">
+            <div class="feelsLike">
+              <i class="bx bxs-thermometer"></i>
+              <span >Sensacion termica:<br /></span>
+              <span class="num">_</span>°C
+            </div>
+
+            <div class="atmosphericPressure">
+              <i class="bx bx-bar-chart-alt-2"></i>
+              <span>Presion atmosferica:<br /></span>
+              <span class="mbar">_</span> Mbar
+            </div>
+          </div>
+
+
+          <div class="column data">
+            <div class="wind">
+              <i class="bx bx-wind"></i>
+              <span>Viento:<br /></span>
+              <span class="num">_</span>Km/h
+            </div>
+
+            <div class="humidity">
+              <i class="bx bxs-droplet-half"></i>
+              <span>Humedad:<br /></span>
+              <span class="num">_</span>%
+            </div>
+          </div>
+
+
+          <div class="column data">
+            <div class="visibility">
+              <i class="bx bx-low-vision"></i>
+              <span>Visibilidad:<br /></span>
+              <span class="num">_</span> Mts
+            </div>
+
+            <div class="minTemp">
+              <i class="bx bxs-thermometer"></i>
+              <span>Temperatura minima:<br /></span>
+              <span class="num">_</span>
+              <span class="degrees"> °</span>C
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <!--insercion de main.js-->
+    <script src="/Js/main.js"></script>
+
+  </body>
+</html>
